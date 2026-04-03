@@ -40,31 +40,24 @@ img, svg { display: block; }
   align-items: center;
   justify-content: space-between;
 }
-.gnb-left  { display: flex; align-items: center; gap: 10px; }
+.gnb-left  { display: flex; align-items: center; gap: 60px; } /* 간격을 10px에서 60px로 확대 */
 .gnb-right { display: flex; align-items: center; }
 
 .nav-link {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: -0.02em;
-  color: var(--black);
+  color: #909090; /* 기본 색상을 회색으로 변경 */
   padding: 4px 0;
   position: relative;
   white-space: nowrap;
+  transition: color 0.3s ease; /* 색상 변화 부드럽게 */
 }
-/* underline slide-in */
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0;
-  width: 100%; height: 1px;
-  background: var(--black);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.25s ease;
+
+.nav-link:hover,
+.nav-link.active { 
+  color: var(--black); /* 마우스 오버 및 활성화 시 검은색으로 변경 */
 }
-.nav-link:hover::after,
-.nav-link.active::after { transform: scaleX(1); }
 
 /* mobile-only Contact link in left row */
 .mo-only { display: none; }
@@ -98,7 +91,7 @@ img, svg { display: block; }
 .works-grid {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 40px 80px;
+  padding: 0 40px 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--gap);
@@ -158,7 +151,7 @@ img, svg { display: block; }
 .lab-grid {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 40px 80px;
+  padding: 0 40px 40px;
   display: flex;
   flex-direction: column;
   gap: var(--gap);
@@ -206,44 +199,47 @@ img, svg { display: block; }
   max-width: 1440px;
   margin: 0 auto;
   width: 100%;
-  padding: 30px 40px 0;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
 }
 
 /* Logo section */
 .contact-logo-area {
-  flex: 0 0 250px;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: default;
+  min-height: 250px;
 }
 .contact-logo-wrap {
   transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.contact-logo-area:hover .contact-logo-wrap { transform: scale(1.08); }
+.contact-logo-area:hover .contact-logo-wrap { transform: scale(1.05); }
 
 .contact-logo-area img {
   width: 210px;
-  height: 192px;
-  display: block;
+  height: auto;
+  opacity: 0.6; /* 기본 상태 (연하게) */
+  transition: opacity 0.3s ease;
+}
+.contact-logo-area:hover img {
+  opacity: 1; /* 호버 시 진하게 */
 }
 
 /* Divider */
 .contact-divider {
   width: 100%;
   height: 1px;
-  background: var(--dark);
-  flex-shrink: 0;
+  background: #D9D9D9;
 }
 
 /* Name section */
 .contact-name-area {
-  flex: 0 0 230px;
+  height: 230px;
   display: flex;
   align-items: center;
-  padding-left: 160px;
+  justify-content: center;
 }
 .contact-name {
   font-size: 140px;
@@ -259,11 +255,11 @@ img, svg { display: block; }
 
 /* Email section */
 .contact-email-area {
-  flex: 1;
+  height: 160px;
   display: flex;
   align-items: flex-start;
-  padding-top: 21px;
-  padding-left: 265px;
+  justify-content: center;
+  padding-top: 30px;
 }
 .contact-email {
   font-size: 82px;
@@ -274,19 +270,10 @@ img, svg { display: block; }
   position: relative;
   transition: color 0.3s ease;
   display: inline-block;
+  cursor: default; /* 포인터 커서 제거 */
 }
-.contact-email::after {
-  content: '';
-  position: absolute;
-  bottom: -4px; left: 0;
-  width: 100%; height: 2px;
-  background: var(--gray);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.35s ease, background 0.3s ease;
-}
-.contact-email:hover { color: var(--dark); }
-.contact-email:hover::after { transform: scaleX(1); background: var(--dark); }
+.contact-email:hover { color: var(--dark); } /* 색상 변화만 유지하거나 필요시 이것도 제거 가능 */
+
 
 /* ─── Project Detail ─────────────────────────── */
 
@@ -294,7 +281,7 @@ img, svg { display: block; }
 .project-intro {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 100px 40px 70px;
+  padding: 100px 40px 40px;
 }
 .project-intro-inner {
   display: flex;
@@ -329,11 +316,11 @@ img, svg { display: block; }
 .project-content {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 40px 80px;
+  padding: 0 40px 40px;
 }
 .project-image {
   width: 100%;
-  aspect-ratio: 1360 / 3000;
+  aspect-ratio: 708 / 4328;
   background: var(--placeholder);
 }
 
@@ -345,31 +332,36 @@ img, svg { display: block; }
 
   .gnb-inner { padding: 0 30px; }
 
-  .page-intro { padding: 90px 90px 70px; }
+  .page-intro { padding: 90px 30px 40px; }
   .intro-ko   { font-size: 24px; }
   .intro-en   { font-size: 20px; }
 
-  .works-grid { padding: 0 30px 40px; }
+  .works-grid { padding: 0 30px 40px; gap: 6px; }
   .works-item .thumb-title { font-size: 16px; }
 
-  .lab-grid { padding: 0 30px 40px; }
+  .lab-grid { padding: 0 30px 40px; gap: 6px; }
+  .lab-row  { gap: 6px; }
   .lab-full { aspect-ratio: 708 / 400; }
 
   /* Contact */
-  .contact-body       { padding: 40px 30px 0; }
-  .contact-logo-area  { flex: 0 0 200px; }
-  .contact-logo-area img { width: 142px; height: 130px; }
-  .contact-name-area  { flex: 0 0 auto; padding: 40px 0 40px 60px; }
-  .contact-name       { font-size: 80px; }
-  .contact-email-area { padding: 20px 0 40px 60px; }
-  .contact-email      { font-size: 44px; }
+  .contact-body { padding: 0 30px; }
+  .contact-logo-area { min-height: 200px; }
+  .contact-logo-area img { width: 142px; }
+  .contact-name-area { height: 180px; }
+  .contact-name { font-size: 80px; }
+  .contact-email-area { height: 120px; padding-top: 20px; }
+  .contact-email { font-size: 44px; }
 
   /* Project */
-  .project-intro { padding: 90px 30px 70px; }
-  .project-intro-inner { padding: 0; gap: 60px; }
-  .project-title-col   { flex: 0 0 409px; }
+  .project-intro { padding: 90px 30px 40px; }
+  .project-intro-inner {
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 61px;
+  }
+  .project-title-col { flex: none; width: 100%; }
   .project-title       { font-size: 34px; }
-  .project-desc-col    { flex: 1; }
+  .project-desc-col    { flex: none; width: 100%; max-width: 528px; }
   .project-content     { padding: 0 30px 40px; }
 }
 
@@ -395,29 +387,26 @@ img, svg { display: block; }
   .works-grid {
     padding: 0 0 60px;
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 4px;
   }
   .works-item { aspect-ratio: 390 / 254; }
   .works-item .thumb-title { font-size: 16px; }
   .works-item .thumb-overlay { padding: 18px 20px; }
 
   /* Lab — single column */
-  .lab-grid   { padding: 0 0 60px; gap: 0; }
+  .lab-grid   { padding: 0 0 60px; gap: 4px; }
   .lab-full   { aspect-ratio: 390 / 220; }
-  .lab-row    { grid-template-columns: 1fr; gap: 0; }
+  .lab-row    { grid-template-columns: 1fr; gap: 4px; }
   .lab-square { aspect-ratio: 1 / 1; }
 
   /* Contact */
-  .contact-body {
-    padding: 30px 20px 0;
-    min-height: calc(100vh - 60px);
-  }
-  .contact-logo-area  { flex: 1; }
-  .contact-logo-area img { width: 142px; height: 130px; }
-  .contact-name-area  { flex: 0 0 auto; padding: 0 0 24px 0; }
-  .contact-name       { font-size: 44px; }
-  .contact-email-area { padding: 14px 0 40px 0; }
-  .contact-email      { font-size: 30px; }
+  .contact-body { padding: 0 20px; min-height: calc(100vh - 60px); }
+  .contact-logo-area { flex: 1; min-height: auto; }
+  .contact-logo-area img { width: 120px; }
+  .contact-name-area { height: auto; padding: 40px 0 20px; justify-content: flex-start; }
+  .contact-name { font-size: 44px; white-space: normal; }
+  .contact-email-area { height: auto; padding: 20px 0 60px; justify-content: flex-start; }
+  .contact-email { font-size: 30px; }
 
   /* Project */
   .project-intro { padding: 80px 20px 60px; }
