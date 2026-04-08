@@ -387,7 +387,7 @@ img, svg { display: block; }
   .works-grid {
     padding: 0 0 60px;
     grid-template-columns: 1fr;
-    gap: 4px;
+    gap: 2px;
   }
   .works-item { aspect-ratio: 390 / 254; }
   .works-item .thumb-title { font-size: 16px; }
