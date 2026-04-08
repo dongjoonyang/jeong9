@@ -36,12 +36,11 @@ img, svg { display: block; }
   margin: 0 auto;
   padding: 0 40px;
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
   align-items: center;
-  justify-content: space-between;
 }
-.gnb-left  { display: flex; align-items: center; gap: 60px; } /* 간격을 10px에서 60px로 확대 */
-.gnb-right { display: flex; align-items: center; }
 
 .nav-link {
   font-size: 18px;
@@ -59,8 +58,9 @@ img, svg { display: block; }
   color: var(--black); /* 마우스 오버 및 활성화 시 검은색으로 변경 */
 }
 
-/* mobile-only Contact link in left row */
-.mo-only { display: none; }
+.nav-works   { grid-column: 1 / span 2; }
+.nav-lab     { grid-column: 3 / span 2; }
+.nav-contact { grid-column: 12 / span 1; justify-self: end; }
 
 /* ─── Page wrapper ───────────────────────────── */
 .page-wrap { padding-top: 60px; }
@@ -372,11 +372,15 @@ img, svg { display: block; }
 @media (max-width: 640px) {
 
   /* GNB */
-  .gnb-inner { padding: 0 20px; }
-  .gnb-left  { width: 100%; justify-content: space-between; }
-  .gnb-right { display: none; }
-  .mo-only   { display: inline; }
-  .nav-link  { font-size: 20px; }
+  .gnb-inner {
+    padding: 0 20px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4px;
+  }
+  .nav-works   { grid-column: 1 / span 1; }
+  .nav-lab     { grid-column: 2 / span 1; }
+  .nav-contact { grid-column: 6 / span 1; justify-self: end; }
+  .nav-link    { font-size: 20px; }
 
   /* Intro */
   .page-intro { padding: 80px 20px 70px; }
