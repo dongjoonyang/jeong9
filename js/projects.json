@@ -1,0 +1,26 @@
+{
+  "windfree": {
+    "title": "Samsung<br>Wind-Free Marketing Page",
+    "desc": "다양한 공간에서 활약하는 Samsung 에어컨의 Wind-Free 기술을 소개하는 마케팅 페이지로 화려한 컬러감에서 느껴지는 활발함과 그에 어울리는 라이프 스타일 이미지를 사용해 Wind-Free 기술을 설명하고 Page의 디자인 아이덴티티를 녹인 영상을 제작했습니다.",
+    "tags": "KeyVisual<br>Motion Graphic<br>Web Design",
+    "thumbnail": "assets/img/windfree_thumbnail.jpg",
+    "contents": [
+      "assets/img/windfree_00_gnb.jpg",
+      "assets/img/windfree_01_kv.jpg",
+      "assets/img/windfree_01_kv.mp4",
+      "assets/img/windfree_02.jpg",
+      "assets/img/windfree_03.jpg",
+      "assets/img/windfree_03.mp4",
+      "assets/img/windfree_04.jpg",
+      "assets/img/windfree_05.jpg",
+      "assets/img/windfree_05.mp4",
+      "assets/img/windfree_06.jpg",
+      "assets/img/windfree_06.mp4",
+      "assets/img/windfree_07.jpg",
+      "assets/img/windfree_07.mp4",
+      "assets/img/windfree_08.jpg",
+      "assets/img/windfree_08.mp4",
+      "assets/img/windfree_09.jpg"
+    ]
+  }
+}
