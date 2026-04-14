@@ -91,25 +91,52 @@
       
       const contentArea = document.getElementById('projectContent');
       if (project.contents && Array.isArray(project.contents)) {
-        project.contents.forEach(path => {
-          if (path.endsWith('.mp4')) {
+        project.contents.forEach((item, index) => {
+          const wrapper = document.createElement('div');
+          wrapper.className = 'content-item';
+          wrapper.style.width = '100%';
+          wrapper.style.position = 'relative';
+
+          if (item.type === 'video') {
             const video = document.createElement('video');
-            video.src = path;
-            video.autoplay = true;
+            video.src = item.src;
+            if (item.poster) video.poster = item.poster;
             video.loop = true;
             video.muted = true;
             video.playsInline = true;
             video.style.width = '100%';
             video.style.display = 'block';
-            contentArea.appendChild(video);
+            
+            // Intersection Observer to play/pause video
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  // If it's the first video, add a small delay for better entrance
+                  if (index === 1 && !video.dataset.playedOnce) {
+                    setTimeout(() => {
+                      video.play().catch(e => console.log("Auto-play prevented", e));
+                      video.dataset.playedOnce = "true";
+                    }, 1100);
+                  } else {
+                    video.play().catch(e => console.log("Auto-play prevented", e));
+                  }
+                } else {
+                  video.pause();
+                }
+              });
+            }, { threshold: 0.1 });
+            
+            observer.observe(video);
+            wrapper.appendChild(video);
           } else {
             const img = document.createElement('img');
-            img.src = path;
+            img.src = item.src;
             img.style.width = '100%';
             img.style.height = 'auto';
             img.style.display = 'block';
-            contentArea.appendChild(img);
+            wrapper.appendChild(img);
           }
+          contentArea.appendChild(wrapper);
         });
       }
     })
