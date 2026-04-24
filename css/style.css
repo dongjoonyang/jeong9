@@ -208,7 +208,7 @@ img, svg { display: block; }
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 250px;
+  min-height: 180px;
 }
 .contact-logo-wrap {
   transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -234,7 +234,7 @@ img, svg { display: block; }
 
 /* Name section */
 .contact-name-area {
-  height: 230px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -253,11 +253,11 @@ img, svg { display: block; }
 
 /* Email section */
 .contact-email-area {
-  height: 160px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   padding-top: 30px;
+  padding-bottom: 120px;
 }
 .contact-email {
   font-size: 82px;
@@ -347,7 +347,7 @@ img, svg { display: block; }
   .contact-logo-area img { width: 142px; }
   .contact-name-area { height: 180px; }
   .contact-name { font-size: 80px; }
-  .contact-email-area { height: 120px; padding-top: 20px; }
+  .contact-email-area { height: 120px; padding-top: 20px; padding-bottom: 80px; }
   .contact-email { font-size: 44px; }
 
   /* Project */
@@ -407,7 +407,7 @@ img, svg { display: block; }
   .contact-logo-area img { width: 120px; }
   .contact-name-area { height: auto; padding: 40px 0; justify-content: center; }
   .contact-name { font-size: 42px; white-space: normal; }
-  .contact-email-area { height: auto; padding: 20px 0 60px; justify-content: center; }
+  .contact-email-area { height: auto; padding: 20px 0 100px; justify-content: center; }
   .contact-email { font-size: 30px; }
 
   /* Project */
