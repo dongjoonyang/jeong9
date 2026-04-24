@@ -314,7 +314,6 @@ img, svg { display: block; }
 .project-title .project-name {
   display: block;
   font-weight: 700;
-  margin-bottom: 8px;
 }
 .project-desc-col { flex: 0 0 561px; }
 .project-desc {
