@@ -289,7 +289,7 @@ img, svg { display: block; }
 .project-intro {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 100px 40px 40px;
+  padding: 100px 40px 160px;
 }
 .project-intro-inner {
   display: flex;
@@ -392,7 +392,7 @@ img, svg { display: block; }
   .gnb-inner {
     padding: 0 20px;
     grid-template-columns: repeat(6, 1fr);
-    gap: 4px;
+    gap: 40px;
   }
   .nav-works   { grid-column: 1 / span 1; }
   .nav-lab     { grid-column: 2 / span 1; }
