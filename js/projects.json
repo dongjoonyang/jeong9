@@ -32,5 +32,31 @@
       { "type": "image", "src": "assets/img/2/jet95_07.jpg" },
       { "type": "image", "src": "assets/img/2/jet95_08.jpg" }
     ]
+  },
+  "oledtw": {
+    "title": "<span class=\"project-name\">LG Signature<br>OLED TV W Leaflet</span>",
+    "desc": "LG전자의 혁신적인 플래그십 제품인 'OLED TV W'의 출시를 위해, 오프라인 커뮤니케이션의 핵심인 리플렛 제작하였습니다. Simplicity. Perfection.이라는 철학을 바탕으로 초박형 디스플레이를 건축적 요소로 변환하여 벽과 하나가 되는 미니멀 디자인을 구현하고, 생활 공간에 영감을 주는 경험을 시각화했습니다.",
+    "tags": "KeyVisual<br>Editorial Design",
+    "thumbnail": "assets/img/3/oled_thumbnail.jpg",
+    "contents": [
+      { "type": "image", "src": "assets/img/3/oled_01.jpg" },
+      { "type": "image", "src": "assets/img/3/oled_02.jpg" },
+      { "type": "image", "src": "assets/img/3/oled_03.jpg" },
+      { "type": "image", "src": "assets/img/3/oled_04.jpg" },
+      { "type": "image", "src": "assets/img/3/oled_05.jpg" }
+    ]
+  },
+  "microled": {
+    "title": "<span class=\"project-name\">Samsung<br>Micro LED Marketing Page</span>",
+    "desc": "Display 신기술인 Micro LED를 탑재한 최상위 프리미엄 TV모델 제품을 홍보하는 마케팅 페이지로 프리미엄 제품이 프리미엄 공간에 동화되는 과정을 묘사하여, 하이엔드 라이프스타일에 걸맞은 몰입형 시각 경험을 제공합니다.",
+    "tags": "KeyVisual<br>Motion Graphic<br>Web Design",
+    "thumbnail": "assets/img/4/micro_led_thumbnail.jpg",
+    "contents": [
+      { "type": "image", "src": "assets/img/4/micro_led_01.jpg" },
+      { "type": "video", "src": "assets/img/4/micro_led_02.mp4" },
+      { "type": "image", "src": "assets/img/4/micro_led_03.jpg" },
+      { "type": "video", "src": "assets/img/4/micro_led_04.mp4" },
+      { "type": "image", "src": "assets/img/4/micro_led_05.jpg" }
+    ]
   }
 }
