@@ -84,7 +84,10 @@
       }
 
       // Update Page Content
-      document.title = `${project.title.replace('<br>', ' ')} — KIM JEONG GYU`;
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = project.title;
+      const plainTitle = tempDiv.textContent || tempDiv.innerText || "";
+      document.title = `${plainTitle} — KIM JEONG GYU`;
       titleEl.innerHTML = project.title;
       document.getElementById('projectDesc').innerText = project.desc;
       document.getElementById('projectTags').innerHTML = project.tags;
