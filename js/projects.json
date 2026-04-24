@@ -16,5 +16,21 @@
       { "type": "video", "src": "assets/img/1/windfree_08.mp4", "poster": "assets/img/1/windfree_08.jpg" },
       { "type": "image", "src": "assets/img/1/windfree_09.jpg" }
     ]
+  },
+  "jet95": {
+    "title": "<span class=\"project-name\">Samsung<br>Bespoke JET Product Page</span>",
+    "desc": "Samsung Bespoke Jet 청소기의 하이엔드 기술력과 라이프스타일 오브제로서의 유연성을 동시에 전달하는 Product Page입니다. 핵심 기술인 모터와 필터 시스템을 3D영상과 그래픽으로 정교하게 시각화하여, 제품의 강력한 성능을 신뢰감 있게 표현했습니다. 무게감 있는 기술 묘사와 밝은 일상 공간 묘사를 대비시켜, 압도적인 성능이 사용자의 직관적인 경험과 주거 환경에 자연스럽게 동화되는 과정을 구체화했습니다.",
+    "tags": "KeyVisual<br>Motion Graphic<br>Web Design",
+    "thumbnail": "assets/img/2/jet95_thumbnail_pc.jpg",
+    "contents": [
+      { "type": "image", "src": "assets/img/2/jet95_01.jpg" },
+      { "type": "video", "src": "assets/img/2/jet95_02.mp4" },
+      { "type": "image", "src": "assets/img/2/jet95_03.jpg" },
+      { "type": "video", "src": "assets/img/2/jet95_04.mp4" },
+      { "type": "image", "src": "assets/img/2/jet95_05.jpg" },
+      { "type": "video", "src": "assets/img/2/jet95_06.mp4" },
+      { "type": "image", "src": "assets/img/2/jet95_07.jpg" },
+      { "type": "image", "src": "assets/img/2/jet95_08.jpg" }
+    ]
   }
 }
