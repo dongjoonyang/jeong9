@@ -58,5 +58,35 @@
       { "type": "video", "src": "assets/img/4/micro_led_04.mp4" },
       { "type": "image", "src": "assets/img/4/micro_led_05.jpg" }
     ]
+  },
+  "soundbar": {
+    "title": "<span class=\"project-name\">Samsung<br>Soundbar Q-Seires Page</span>",
+    "desc": "Samsung Soundbar Q-Series의 압도적인 사운드 기술력을 시각적으로 전달하는 Product Page입니다. 사운드의 파동과 공간감을 정교한 그래픽으로 구현하여, 제품의 성능을 직관적으로 이해할 수 있도록 구성했습니다.",
+    "tags": "KeyVisual<br>Motion Graphic<br>Web Design",
+    "thumbnail": "assets/img/5/soundbar_q_thumbnail.jpg",
+    "contents": [
+      { "type": "image", "src": "assets/img/5/soundbar_q_01.jpg" },
+      { "type": "video", "src": "assets/img/5/soundbar_q_02.mp4" },
+      { "type": "image", "src": "assets/img/5/soundbar_q_03.jpg" },
+      { "type": "video", "src": "assets/img/5/soundbar_q_04.mp4" },
+      { "type": "image", "src": "assets/img/5/soundbar_q_05.jpg" }
+    ]
+  },
+  "ailaundry": {
+    "title": "<span class=\"project-name\">Samsung<br>Bespoke AI Laundry Product Page</span>",
+    "desc": "사용자의 라이프스타일에 맞춰 세탁과 건조를 최적화하는 Samsung Bespoke AI 세탁기/건조기의 혁신 기능을 소개하는 제품 페이지입니다. AI 감지 기술과 정교한 제어 시스템을 직관적인 비주얼로 시각화했습니다.",
+    "tags": "KeyVisual<br>Motion Graphic<br>Web Design",
+    "thumbnail": "assets/img/7/ai_wash_thumbnail.jpg",
+    "contents": [
+      { "type": "image", "src": "assets/img/7/ai_wash_01.jpg" },
+      { "type": "video", "src": "assets/img/7/ai_wash_02.mp4" },
+      { "type": "image", "src": "assets/img/7/ai_wash_03.jpg" },
+      { "type": "video", "src": "assets/img/7/ai_wash_04.mp4" },
+      { "type": "image", "src": "assets/img/7/ai_wash_05.jpg" },
+      { "type": "video", "src": "assets/img/7/ai_wash_06.mp4" },
+      { "type": "image", "src": "assets/img/7/ai_wash_07.jpg" },
+      { "type": "video", "src": "assets/img/7/ai_wash_08.mp4" },
+      { "type": "image", "src": "assets/img/7/ai_wash_09.jpg" }
+    ]
   }
 }
