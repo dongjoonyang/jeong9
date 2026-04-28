@@ -37,13 +37,9 @@
     "title": "<span class=\"project-name\">LG Signature<br>OLED TV W Leaflet</span>",
     "desc": "LG전자의 혁신적인 플래그십 제품인 'OLED TV W'의 출시를 위해, 오프라인 커뮤니케이션의 핵심인 리플렛 제작하였습니다. Simplicity. Perfection.이라는 철학을 바탕으로 초박형 디스플레이를 건축적 요소로 변환하여 벽과 하나가 되는 미니멀 디자인을 구현하고, 생활 공간에 영감을 주는 경험을 시각화했습니다.",
     "tags": "KeyVisual<br>Editorial Design",
-    "thumbnail": "assets/img/3/oled_thumbnail.jpg",
+    "thumbnail": "assets/img/3/w_thumbnail.jpg",
     "contents": [
-      { "type": "image", "src": "assets/img/3/oled_01.jpg" },
-      { "type": "image", "src": "assets/img/3/oled_02.jpg" },
-      { "type": "image", "src": "assets/img/3/oled_03.jpg" },
-      { "type": "image", "src": "assets/img/3/oled_04.jpg" },
-      { "type": "image", "src": "assets/img/3/oled_05.jpg" }
+      { "type": "image", "src": "assets/img/3/w_leaflet_01.jpg" }
     ]
   },
   "microled": {
@@ -87,6 +83,65 @@
       { "type": "image", "src": "assets/img/7/ai_wash_07.jpg" },
       { "type": "video", "src": "assets/img/7/ai_wash_08.mp4" },
       { "type": "image", "src": "assets/img/7/ai_wash_09.jpg" }
+    ]
+  },
+  "lgchem": {
+    "title": "<span class=\"project-name\">LG Chem<br>RESU Catalog & Leaflet</span>",
+    "desc": "LG화학의 가정용 에너지 저장 시스템 RESU(Residential Energy Storage Unit)를 소개하는 카탈로그와 리플렛입니다. 'Change Your Energy, Charge Your Life'라는 슬로건을 바탕으로, 복잡한 에너지 저장 기술을 명료하고 설득력 있는 편집 디자인으로 풀어냈습니다. 제품 라인업과 사양을 체계적으로 정리한 카탈로그와 주목도 높은 리플렛을 함께 제작하여 다양한 오프라인 커뮤니케이션 환경에 대응했습니다.",
+    "tags": "KeyVisual<br>Editorial Design",
+    "thumbnail": "assets/img/6/lg_chem_thumbnail.jpg",
+    "contents": [
+      { "type": "image", "src": "assets/img/6/lg_chem.jpg" }
+    ]
+  },
+  "soundbars": {
+    "title": "<span class=\"project-name\">Samsung<br>Soundbar S-Series Product Page</span>",
+    "desc": "Samsung Soundbar S-Series의 공간을 가득 채우는 몰입형 사운드와 인테리어에 자연스럽게 녹아드는 슬림한 디자인을 전달하는 Product Page입니다. 제품의 완성도 높은 사운드 기술과 라이프스타일 통합 가치를 모션그래픽으로 시각화하여, 어떤 공간에서도 완성되는 몰입형 오디오 경험을 표현했습니다.",
+    "tags": "KeyVisual<br>Motion Graphic<br>Web Design",
+    "thumbnail": "assets/img/8/soundbar_s_thumbnail.jpg",
+    "contents": [
+      { "type": "image", "src": "assets/img/8/soundbar_s_01.jpg" },
+      { "type": "video", "src": "assets/img/8/soundbar_s_02.mp4" },
+      { "type": "image", "src": "assets/img/8/soundbar_s_03.jpg" },
+      { "type": "video", "src": "assets/img/8/soundbar_s_04.mp4" },
+      { "type": "image", "src": "assets/img/8/soundbar_s_05.jpg" }
+    ]
+  },
+  "soundbarmkt": {
+    "title": "<span class=\"project-name\">Samsung<br>Soundbar 2022 Marketing Page</span>",
+    "desc": "Samsung 2022 Soundbar 전 라인업(Q-Series, Ultra Slim, S-Series, B-Series)을 소개하는 마케팅 페이지입니다. 8년 연속 글로벌 1위의 기술력과 삼성 오디오랩의 사운드 철학을 바탕으로, 각 라인업의 차별화된 특성과 삼성 TV와의 시너지 경험을 직관적인 비주얼로 전달했습니다.",
+    "tags": "KeyVisual<br>Web Design",
+    "thumbnail": "assets/img/9/soundbar_mkt_thumbnail.jpg",
+    "contents": [
+      { "type": "image", "src": "assets/img/9/soundbar_mkt_01.jpg" },
+      { "type": "image", "src": "assets/img/9/soundbar_mkt_02.jpg" }
+    ]
+  },
+  "cinebeam": {
+    "title": "<span class=\"project-name\">LG<br>CineBeam 4K Catalog</span>",
+    "desc": "LG CineBeam HU80K 레이저 4K UHD 프로젝터를 소개하는 카탈로그입니다. 8.3메가픽셀의 4K UHD 화질, 20,000시간의 장수명 레이저 광원, 무선 연결 등 핵심 기술을 정교하게 시각화하고, 공간 어디에든 구현되는 시네마 경험을 담은 라이프스타일 이미지를 통해 제품의 프리미엄 가치를 전달했습니다.",
+    "tags": "KeyVisual<br>Editorial Design",
+    "thumbnail": "assets/img/10/cinebeam_thumbnail.jpg",
+    "contents": [
+      { "type": "image", "src": "assets/img/10/cinebeam_01.jpg" }
+    ]
+  },
+  "medical": {
+    "title": "<span class=\"project-name\">LG<br>Medical Imaging Displays Catalog</span>",
+    "desc": "LG전자의 전문 의료용 디스플레이 라인업을 소개하는 카탈로그입니다. 8MP 임상 리뷰 모니터, 1.3MP 임상 리뷰 모니터, 8MP 수술용 모니터를 아우르며, DICOM 규격 준수와 Hardware Calibration 등 의료 현장의 엄격한 요구를 충족하는 기술력을 신뢰감 있는 편집 디자인으로 전달했습니다.",
+    "tags": "KeyVisual<br>Editorial Design",
+    "thumbnail": "assets/img/11/medical_thumbnail.jpg",
+    "contents": [
+      { "type": "image", "src": "assets/img/11/medical_01.jpg" }
+    ]
+  },
+  "promotion": {
+    "title": "<span class=\"project-name\">LG<br>TV Promotion Flyer</span>",
+    "desc": "LG UHD TV의 콘텐츠 파트너십 프로모션을 위한 A4 플라이어 디자인입니다. Netflix 3개월 무료 구독 증정과 GameFly 스트리밍 게임 번들 프로모션을 각각 독립적인 플라이어로 제작하여, 구매 혜택과 LG TV의 콘텐츠 생태계를 효과적으로 전달했습니다.",
+    "tags": "KeyVisual<br>Editorial Design",
+    "thumbnail": "assets/img/12/promotion_thumbnail.jpg",
+    "contents": [
+      { "type": "image", "src": "assets/img/12/promotion_01.jpg" }
     ]
   }
 }
