@@ -367,9 +367,10 @@ img, svg { display: block; }
   .works-grid { padding: 0 30px 40px; gap: 6px; }
   .works-item .thumb-title { font-size: 16px; }
 
-  .lab-grid { padding: 0 30px 40px; gap: 6px; }
-  .lab-row  { gap: 6px; }
-  .lab-full { aspect-ratio: 708 / 400; }
+  .lab-grid   { padding: 0 30px 40px; gap: 6px; }
+  .lab-row    { gap: 6px; }
+  .lab-full   { aspect-ratio: 708 / 400; }
+  .lab-square { aspect-ratio: 4 / 3; }
 
   /* Contact */
   .contact-body { padding: 0 30px; }
@@ -391,6 +392,19 @@ img, svg { display: block; }
   .project-title       { font-size: 34px; }
   .project-desc-col    { flex: none; width: 100%; max-width: 528px; }
   .project-content     { padding: 0 30px 40px; }
+}
+
+
+/* ═══════════════════════════════════════════════
+   TABLET-SM  (≤ 768px)
+═══════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  .lab-grid   { padding: 0 20px 40px; gap: 4px; }
+  .lab-row    { gap: 4px; }
+  .lab-full   { aspect-ratio: 16 / 9; }
+  .lab-square { aspect-ratio: 1 / 1; }
+
 }
 
 
@@ -427,9 +441,9 @@ img, svg { display: block; }
 
   /* Lab — single column */
   .lab-grid   { padding: 0 0 60px; gap: 4px; }
-  .lab-full   { aspect-ratio: 390 / 220; }
+  .lab-full   { aspect-ratio: 16 / 9; }
   .lab-row    { grid-template-columns: 1fr; gap: 4px; }
-  .lab-square { aspect-ratio: 1 / 1; }
+  .lab-square { aspect-ratio: 16 / 9; }
 
   /* Contact */
   .contact-body { padding: 0 20px; min-height: calc(100vh - 60px); }
