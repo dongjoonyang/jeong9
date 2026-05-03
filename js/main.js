@@ -61,6 +61,29 @@
 })();
 
 
+/* ─── Lab Page: Video Autoplay on Scroll ──────── */
+(function () {
+  const videos = document.querySelectorAll('.lab-grid video');
+  if (videos.length === 0) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.play().catch(e => console.log("Auto-play prevented", e));
+      } else {
+        entry.target.pause();
+      }
+    });
+  }, { threshold: 0.1 });
+
+  videos.forEach(video => {
+    // Remove autoplay attribute to let observer handle it
+    video.removeAttribute('autoplay');
+    video.pause();
+    observer.observe(video);
+  });
+})();
+
 /* ─── Dynamic Project Loading ───────────────── */
 (function () {
   const titleEl = document.getElementById('projectTitle');
